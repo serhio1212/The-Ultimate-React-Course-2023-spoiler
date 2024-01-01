@@ -10,13 +10,13 @@ const [isOpen, setIsOpen] = useState(false);
 }
 
     return <>
-    <div className="item" onClick={handleToggle}>
+    <div className={cs.item} onClick={handleToggle}>
 <p>{num < 9 ? `0${num + 1}` : num + 1}</p>
 <p>{title}</p>
 <p>{isOpen ? "-" : "+"}</p>
 
 </div>
-{isOpen && <div className="content-box">{text}</div>}
+{isOpen && <div className={cs.contentBox}>{text}</div>}
 </>
 }
 export default AccordionItem;

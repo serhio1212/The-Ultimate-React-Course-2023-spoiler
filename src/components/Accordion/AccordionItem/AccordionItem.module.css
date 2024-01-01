@@ -1,0 +1,12 @@
+.item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.content-box {
+    display: inline-block;
+
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
