@@ -5,12 +5,12 @@ import AccordionItem from "./AccordionItem/AccordionItem.jsx";
 
 function Accordion({dData}) {
     return <div className={cs.accordion}>
-        {dData.map((el, i)=> <AccordionItem key={el.title} title={el.title} text={el.text} num={i}/>)}
+        {dData.map((el, i)=> <AccordionItem key={el.thrititle} thrititle={el.thrititle} text={el.text} num={i}/>)}
     </div>
 }
 
 // Accordion.propTypes = {
-//     dData: PropTypes.object,
+//     dData: PropTypes.array,
 // };
 
 export default Accordion;

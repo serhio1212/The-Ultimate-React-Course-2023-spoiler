@@ -2,7 +2,7 @@ import {useState} from 'react'
 import cs from './AccordionItem.module.css'
 import PropTypes from 'prop-types';
 
-function AccordionItem({num, title, text}) {
+function AccordionItem({num, thrititle, text}) {
 const [isOpen, setIsOpen] = useState(false);
 
     function handleToggle() {
@@ -12,7 +12,7 @@ const [isOpen, setIsOpen] = useState(false);
     return <>
     <div className={cs.item} onClick={handleToggle}>
 <p>{num < 9 ? `0${num + 1}` : num + 1}</p>
-<p>{title}</p>
+<p>{thrititle}</p>
 <p>{isOpen ? "-" : "+"}</p>
 
 </div>

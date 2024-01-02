@@ -3,7 +3,8 @@ import {useState} from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import Accordion from "./components/Accordion/Accordion.jsx";
-import faqs from "./redux/dData.jsx";
+// import faqs from "./redux/dData.jsx";
+import faqs from "./redux/dData";
 
 // const faqs = [
 //     {title: "Where are these chairs assembled?", text: "In production"},
