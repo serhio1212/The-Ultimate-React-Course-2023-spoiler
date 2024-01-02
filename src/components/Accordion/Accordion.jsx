@@ -1,7 +1,7 @@
 
 import cs from './Accordion.module.css';
 import AccordionItem from "./AccordionItem/AccordionItem.jsx";
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 function Accordion({dData}) {
     return <div className={cs.accordion}>
@@ -9,8 +9,8 @@ function Accordion({dData}) {
     </div>
 }
 
-Accordion.propTypes = {
-    dData: PropTypes.array,
-};
+// Accordion.propTypes = {
+//     dData: PropTypes.object,
+// };
 
 export default Accordion;
