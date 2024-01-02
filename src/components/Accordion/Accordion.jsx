@@ -1,12 +1,16 @@
-import React, {Component} from 'react';
-import {useState} from 'react';
+
 import cs from './Accordion.module.css';
 import AccordionItem from "./AccordionItem/AccordionItem.jsx";
+import PropTypes from 'prop-types';
 
-function Accordion({data}) {
+function Accordion({dData}) {
     return <div className={cs.accordion}>
-        {data.map((el, i)=> <AccordionItem key={el.title} title={el.title} text={el.text} num={i}/>)}
+        {dData.map((el, i)=> <AccordionItem key={el.title} title={el.title} text={el.text} num={i}/>)}
     </div>
 }
+
+Accordion.propTypes = {
+    dData: PropTypes.array,
+};
 
 export default Accordion;

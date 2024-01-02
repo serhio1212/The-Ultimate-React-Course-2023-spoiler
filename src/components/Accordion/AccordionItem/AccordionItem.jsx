@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import cs from './AccordionItem.module.css'
-
+import PropTypes from 'prop-types';
 
 function AccordionItem({num, title, text}) {
 const [isOpen, setIsOpen] = useState(false);
